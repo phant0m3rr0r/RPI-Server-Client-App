@@ -5,5 +5,5 @@
     android:title="Server IP"
     android:summary="Internal IP of your LED-Control Server"
     android:dialogTitle="Server IP"
-    android:defaultValue = "127.0.0.1"/>
+    android:defaultValue = "http://127.0.0.1/"/>
 </PreferenceScreen>

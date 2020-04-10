@@ -5,16 +5,36 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
+            android:id="@+id/nav_screen"
+            android:icon="@drawable/ic_menu_screen"
             android:title="@string/menu_screen" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
+            android:id="@+id/nav_mode"
+            android:icon="@drawable/ic_menu_led"
             android:title="@string/menu_mode" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:id="@+id/nav_remote"
+            android:icon="@drawable/ic_menu_remote"
             android:title="@string/menu_remote" />
     </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Contact Developer" />
+        </menu>
+    </item>
+
+
+    <item
+        android:id="@+id/nav_exit"
+        android:icon="@drawable/ic_menu_exit"
+        android:title="Exit" />
+
 </menu>

@@ -26,24 +26,25 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
+import com.example.rpiclient.MainActivity;
 import com.example.rpiclient.R;
 import com.example.rpiclient.RetrofitInterface;
+import com.example.rpiclient.SettingsManager;
 import com.google.android.material.snackbar.Snackbar;
 
-public class HomeFragment extends Fragment implements SharedPreferences.OnSharedPreferenceChangeListener{
-
+public class HomeFragment extends Fragment {
 
     private Retrofit retrofit;
     private RetrofitInterface retrofitInterface;
     private String BASE_URL = "http://192.168.8.155:3000";
 
+    //String BASE_URL = settings.getString("PREF_SERVER_IP","");
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
         return inflater.inflate(R.layout.fragment_home, container, false);
-
 
     }
 
@@ -459,9 +460,4 @@ public class HomeFragment extends Fragment implements SharedPreferences.OnShared
 
     }
 
-
-    @Override
-    public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String s) {
-
-    }
 }

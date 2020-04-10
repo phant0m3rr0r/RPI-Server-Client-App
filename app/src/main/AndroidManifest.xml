@@ -3,6 +3,7 @@
     package="com.example.rpiclient">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -11,6 +12,7 @@
         android:usesCleartextTraffic="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:name=".appContext"
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
@@ -27,6 +29,7 @@
         <activity
             android:name=".SettingsActivity"
             android:label="@string/action_settings"
+            android:theme="@style/Theme.AppCompat"
             android:parentActivityName=".MainActivity">
 
             <meta-data
