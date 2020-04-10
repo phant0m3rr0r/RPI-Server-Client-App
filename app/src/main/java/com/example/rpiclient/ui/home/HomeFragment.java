@@ -1,5 +1,6 @@
 package com.example.rpiclient.ui.home;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
+import androidx.preference.PreferenceManager;
 
 import android.widget.Button;
 import android.widget.EditText;
@@ -28,18 +30,24 @@ import com.example.rpiclient.R;
 import com.example.rpiclient.RetrofitInterface;
 import com.google.android.material.snackbar.Snackbar;
 
-public class HomeFragment extends Fragment {
+public class HomeFragment extends Fragment implements SharedPreferences.OnSharedPreferenceChangeListener{
+
 
     private Retrofit retrofit;
     private RetrofitInterface retrofitInterface;
     private String BASE_URL = "http://192.168.8.155:3000";
 
 
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
         return inflater.inflate(R.layout.fragment_home, container, false);
+
+
     }
+
+
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
@@ -452,5 +460,8 @@ public class HomeFragment extends Fragment {
     }
 
 
+    @Override
+    public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String s) {
 
+    }
 }

@@ -28,4 +28,5 @@
     <string name="_10">10</string>
     <string name="_20">20</string>
     <string name="screen_display">Screen Display</string>
+    <string name="pref_size_key" />
 </resources>

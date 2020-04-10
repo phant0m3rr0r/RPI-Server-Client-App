@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<EditTextPreference
+    android:key="PREF_SERVER_IP"
+    android:title="Server IP"
+    android:summary="Internal IP of your LED-Control Server"
+    android:dialogTitle="Server IP"
+    android:defaultValue = "127.0.0.1"/>
+</PreferenceScreen>
